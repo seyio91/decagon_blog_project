@@ -1,3 +1,37 @@
+$(document).ready(function(){
+	function reset(){
+        $("#title").val() = "";
+        $("#author").val() = "";
+        $("#tags").val() = "";
+        $("#image").val() = ""
+        $("#blogpost").val() = ""
+
+    }
+	//add user to json file
+	$("#publish").click(function(event){
+        event.preventDefault();
+		const blog_title = $("#title").val();
+		const blog_author = $("#author").val();
+		const blog_tags = $("#tags").val();
+        const blog_image = $("#image").val();
+        const blog_post = $("#blogpost").val();
+		const data = {
+            author : blog_author,
+            title : blog_title,
+            image_src : blog_image,
+            blog_main : blog_post,
+            tags : blog_tags
+        }
+		//validation before posting 
+		if (blog_title == "" || blog_author === "" || blog_tags === "" || blog_post === "" ){
+			alert("Complete all required fields")
+        } else {
+           $.post("http://localhost:3000/blog_posts", data, alert("New Post Created"))
+        //console.log("data was posted")
+		}
+	})
+
+}) //waits for document to be loaded before execution
 // //getting values from each field
 // var firstName = $("input#firstname").val();
 // var lastName  = $("input#lastname").val();

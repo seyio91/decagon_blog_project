@@ -37,5 +37,23 @@
       "gender": "male",
       "id": 2
     }
+  ],
+  "blog_posts": [
+    {
+      "id": 1,
+      "author": "James Gordon",
+      "title": "My First Blog Post",
+      "image_src": "images/cat.jpg",
+      "blog_main": "i definitely do not like blogging but here's my first post",
+      "tags": "fashion"
+    },
+    {
+      "author": "Seyi Obaweya",
+      "title": "Hello World",
+      "image_src": "",
+      "blog_main": "My first Blog Post",
+      "tags": "fashion",
+      "id": 2
+    }
   ]
 }
