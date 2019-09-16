@@ -54,6 +54,14 @@
       "blog_main": "My first Blog Post",
       "tags": "fashion",
       "id": 2
+    },
+    {
+      "author": "Seyi Obaweya",
+      "title": "Hello World version 2",
+      "image_src": "",
+      "blog_main": "My second Blog Post",
+      "tags": "lifestyle",
+      "id": 3
     }
   ]
 }

@@ -1,11 +1,10 @@
 $(document).ready(function(){
 	function reset(){
-        $("#title").val() = "";
-        $("#author").val() = "";
-        $("#tags").val() = "";
-        $("#image").val() = ""
-        $("#blogpost").val() = ""
-
+        $("#title").val("");
+        $("#author").val("");
+        $("#tags").val("");
+        $("#image").val("");
+        $("#blogpost").val("");
     }
 	//add user to json file
 	$("#publish").click(function(event){
@@ -27,9 +26,35 @@ $(document).ready(function(){
 			alert("Complete all required fields")
         } else {
            $.post("http://localhost:3000/blog_posts", data, alert("New Post Created"))
+           reset();
         //console.log("data was posted")
 		}
-	})
+    })
+
+    $.get("http://localhost:3000/blog_posts", function(data){
+        console.log(data);
+        for (let i = 0; i < data.length; i++){
+            $("#blog_display").append(`<li>
+            <div id="postbody">
+                <div id="post_header">
+                    <p>${data[i].title}</p>
+                </div>
+                <div id="post_body">
+                    <p${data[i].blog_main}</p>
+                </div>
+            </div>
+            </li>
+            `)
+        }
+    })
+    
+    // jQuery.get("http://localhost:3000/users", function(data){
+	// 	console.log(data)//  the array in users is returned
+	// 	//looping through the array
+	// 	for (let  = 0; i < data.length; i++){
+	// 		$(#user-list).append(`<li>${data[i].age} is </li>`);
+	// 	}
+	// })
 
 }) //waits for document to be loaded before execution
 // //getting values from each field
