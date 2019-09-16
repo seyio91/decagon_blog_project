@@ -40,7 +40,8 @@ $(document).ready(function(){
                     <p>${data[i].title}</p>
                 </div>
                 <div id="post_body">
-                    <p${data[i].blog_main}</p>
+                    <p>${data[i].blog_main.slice(0,10)}...</p>
+                    <a href="http://localhost:3000/blog_posts/${data[i].id}"> Read More </a>
                 </div>
             </div>
             </li>
@@ -57,6 +58,8 @@ $(document).ready(function(){
 	// })
 
 }) //waits for document to be loaded before execution
+
+// http://localhost:3000/blog_posts/{id}
 // //getting values from each field
 // var firstName = $("input#firstname").val();
 // var lastName  = $("input#lastname").val();
