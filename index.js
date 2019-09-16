@@ -1,10 +1,12 @@
 $(document).ready(function(){
 	function reset(){
+        //$('form :input').attr('value', '')
         $("#title").val("");
         $("#author").val("");
         $("#tags").val("");
         $("#image").val("");
         $("#blogpost").val("");
+        console.log("reset worked")
     }
 	//add user to json file
 	$("#publish").click(function(event){
@@ -25,7 +27,8 @@ $(document).ready(function(){
 		if (blog_title == "" || blog_author === "" || blog_tags === "" || blog_post === "" ){
 			alert("Complete all required fields")
         } else {
-           $.post("http://localhost:3000/blog_posts", data, alert("New Post Created"))
+           $.post("http://localhost:3000/blog_posts", data, alert("New Post Created")
+           )
            reset();
         //console.log("data was posted")
 		}
@@ -41,21 +44,15 @@ $(document).ready(function(){
                 </div>
                 <div id="post_body">
                     <p>${data[i].blog_main.slice(0,10)}...</p>
-                    <a href="http://localhost:3000/blog_posts/${data[i].id}"> Read More </a>
+                    <button type="submit" id="readMore"> Read More </button>
+                <a id="readME" href="views.html?id=${data[i].id}" target="_blank"> Read Me</a>
                 </div>
             </div>
             </li>
             `)
         }
-    })
-    
-    // jQuery.get("http://localhost:3000/users", function(data){
-	// 	console.log(data)//  the array in users is returned
-	// 	//looping through the array
-	// 	for (let  = 0; i < data.length; i++){
-	// 		$(#user-list).append(`<li>${data[i].age} is </li>`);
-	// 	}
-	// })
+    });
+
 
 }) //waits for document to be loaded before execution
 
