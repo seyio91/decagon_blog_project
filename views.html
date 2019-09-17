@@ -37,48 +37,16 @@
             <div class="row">
                 <div class="col-md-8">
                     -- LATEST POSTS --
-                    <article>
-                        <div id="postbody">
-                            <div id="post_header">
-                                    <h2>${data.title}</h2>
-                                </div>
-                         
-                            <div class="row">
-                                <div class="group1 col-sm-6 col-md-6">
-                                        <i class="fas fa-folder-open"></i>  <a href="#">Signs</a>
-                                        <i class="fas fa-bookmark"></i> <a href="#">Aries</a>,
-                                        <a href="#">Fire</a>, <a href="#">Mars</a>
-                                </div>
-                                <div class="group2 col-sm-6 col-md-6">
-                                        <i class="fas fa-user-edit"></i> <a href="singlepost.html#comments">20 Comments</a>
-                                        <i class="far fa-clock"></i> August 24, 2013 9:00 PM
-                                </div>
-                            </div>
-                         
-                            <hr>
-                         
-                            <img src="./images/ThumperDC.jpg" class="img-fluid">
-                         
-                            <br />
-                         
-                            <p class="lead">
-                                <div id="post_body">
-                                    <p>${data.blog_main}</p>
-                                </div>
-                            </p>
-                         
-                            <p class="text-right">
-                                <a href="singlepost.html" class="text-right">
-                                    continue reading...
-                                </a>
-                            </p>
-                         
-                            <hr>
-                            </div>
-                        </article>
+                    <div id="blogview">
+                        Blog Content
+                    </div>
+                    <button type="submit" id="edit_post">Edit Record</button>
+                    <button type="submit" id="delete_test">Delete Record</button>
+                    
+                        <!--Navigation Starts here-->
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
-                                <li class="page-item"><a class="page-link" href="#">BACK TO hOME PAGE</a></li>
+                                <li class="page-item"><a class="page-link" href="blog_posts.html">BACK TO hOME PAGE</a></li>
                             </ul>
                         </nav>
                     <!--Start Comment-->
@@ -105,27 +73,9 @@
                             </div>
                     
                         </form>
-                        <ul id="comments" class="comments">
-                                <li class="comment">
-                                    <div class="clearfix">
-                                        <h4 class="pull-left">John</h4>
-                                        <p class="pull-right">9:41 PM on August 24, 2013</p>
-                                    </div>
-                                    <p>
-                                        <em>I don't believe in astrology but still your writing style is really great!</em>
-                                    </p>
-                                </li>
-                             
-                                <li class="comment clearfix">
-                                    <div class="clearfix">
-                                        <h4 class="pull-left">John</h4>
-                                        <p class="pull-right">9:41 PM on August 24, 2013</p>
-                                    </div>
-                                    <p>
-                                        <em>I don't believe in astrology but still your writing style is really great!</em>
-                                    </p>
-                                </li>
-                            </ul>
+                        <ul id="comment_list" class="comments">
+                            <!--Comment Code Runs Here-->
+                        </ul>
                     </div>
                     <!--End Comment-->
                 </div>
@@ -179,13 +129,10 @@
           </footer>
 
     <!--Do not  touch-->
-    <div id="blogview">
+    <!--<div id="blogview">
         Blog Content
-    </div>
+    </div> -->
     <!--Do not  touch-->
-    <button type="submit" id="edit_post">Edit Record</button>
-    <button type="submit" id="delete_test">Delete Record</button>
-    <a href="blog_posts.html">Back to Blog Post</a>
     <div id="comments">
         <h1>User Feedback</h1>
         <form action="">
@@ -197,14 +144,6 @@
             <textarea id="comment_body"></textarea>
             <button type="submit" id="comment_submit">Submit</button>
         </form>
-        <div id="all_comments">
-            <p>Comments</p>
-            <ul id="comment_list">
-                <div id="cp_names"><p>Comment Name</p></div>
-                <div id="cp_body"><p>Comment Body</p></div>
-            </ul>
-            
-        </div>
     </div>
 
     <!-- Optional JavaScript -->
