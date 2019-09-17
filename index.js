@@ -44,7 +44,7 @@ $(document).ready(function(){
                 <div id="post_body">
                     <p>${data[i].blog_main.slice(0,10)}...</p>
                     <button type="submit" id="readMore"> Read More </button>
-                <a id="readME" href="views.html?id=${data[i].id}" target="_blank"> Read Me</a>
+                <a id="readME" href="views.html?id=${data[i].id}"> Read Me</a>
                 </div>
             </div>
             </li>

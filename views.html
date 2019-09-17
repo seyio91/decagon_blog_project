@@ -21,6 +21,7 @@
     </div>
     <button type="submit" id="edit_post">Edit Record</button>
     <button type="submit" id="delete_test">Delete Record</button>
+    <a href="blog_posts.html">Back to Blog Post</a>
     <div id="comments">
         <h1>User Feedback</h1>
         <form action="">
@@ -30,10 +31,15 @@
             <input type="text" id="comment_email">
             <label for="comment"> Comment </label>
             <textarea id="comment_body"></textarea>
-            <button type="submit">Submit</button>
+            <button type="submit" id="comment_submit">Submit</button>
         </form>
         <div id="all_comments">
             <p>Comments</p>
+            <ul id="comment_list">
+                <div id="cp_names"><p>Comment Name</p></div>
+                <div id="cp_body"><p>Comment Body</p></div>
+            </ul>
+            
         </div>
     </div>
 

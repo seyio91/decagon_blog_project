@@ -34,7 +34,7 @@ $("#delete_test").click(function(){
         dataType: "json",
         type: "delete",
         success: function(){
-            alert("record delted")
+            alert("record deleted")
             window.location.replace("blog_posts.html")
         }
     })
@@ -45,3 +45,55 @@ $("#edit_post").click(function(event){
     event.preventDefault();
     window.location.replace(editUrl)
 })
+
+function cReset(){
+    $("#comment_name").val("");
+    $("#comment_email").val("");
+    $("#comment_body").val("");
+    console.log("reset worked")
+}
+
+$("#comment_submit").click(function(event){
+    event.preventDefault();
+    var id = $.urlParam('id');
+    const rUrl = "views.html?id=" + id 
+    const c_name = $("#comment_name").val();
+	const c_email = $("#comment_email").val();
+	const blogpost = $("#comment_body").val();
+    const c_body = Number(id);
+    const cData = {
+        cName : c_name,
+        cEmail : c_email,
+        blog_id : c_body,
+        cBody : blogpost
+    }
+    if (blogpost == "" || c_name === "" ){
+        alert("Complete all required fields")
+    } else {
+        console.log(`this should post the following data ${c_name} and ${c_email} and ${blogpost} and ${c_body}`)
+       $.post("http://localhost:3000/comments", cData, alert("New Post Created"));
+       cReset();
+       window.location.replace(rUrl);
+       
+    }
+})
+
+//display comments
+//get comments using id
+const cUrl = "http://localhost:3000/comments/?blog_id=" + id 
+$.get(cUrl, function(data){
+    console.log(data);
+    for (let i = 0; i < data.length; i++){
+        $("#comment_list").append(`<li>
+            <div id="comment_head">
+                <div id="post_header">
+                    <p>${data[i].cName}</p>
+                </div>
+                <div id="comment_body">
+                    <p>${data[i].cBody}...</p>
+                </div>
+            </div>
+            </li>
+            `)
+    }    
+});

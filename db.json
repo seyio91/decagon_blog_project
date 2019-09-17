@@ -71,5 +71,49 @@
       "tags": "lifestyle",
       "id": 4
     }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "cName": "Obaweya Seyi",
+      "cEmail": "seyi_obaweya@yahoo.com",
+      "blog_id": "1",
+      "cBody": "i hate your Post"
+    },
+    {
+      "id": 2,
+      "cName": "Seyi",
+      "cEmail": "seyi_obaweya@yahoo.com",
+      "blog_id": "1",
+      "cBody": "i hate your Post2"
+    },
+    {
+      "id": 3,
+      "cName": "Test3",
+      "cEmail": "seyi_obaweya@yahoo.com",
+      "blog_id": "2",
+      "cBody": "i hate your Post"
+    },
+    {
+      "cName": "name",
+      "cEmail": "email",
+      "blog_id": "2",
+      "cBody": "hgfditgyiadtgiagiugti",
+      "id": 4
+    },
+    {
+      "cName": "name2",
+      "cEmail": "email123",
+      "blog_id": "2",
+      "cBody": "test number 4",
+      "id": 5
+    },
+    {
+      "cName": "Commentter 2",
+      "cEmail": "comment@deleted",
+      "blog_id": "2",
+      "cBody": "Please Delete after",
+      "id": 6
+    }
   ]
 }
