@@ -6,8 +6,8 @@ $.urlParam = function(name){
 }
 
 var id = $.urlParam('id');
-console.log(id)
-console.log("i worked")
+// console.log(id)
+// console.log("i worked")
 
 
 const url = "http://localhost:3000/blog_posts/" + id
@@ -29,13 +29,19 @@ $.get(url, function(data){
 
 $("#delete_test").click(function(){
     event.preventDefault();
-    alert("Button Clicked")
     $.ajax({
-        url: "http://localhost:3000/blog_posts/7",
+        url: url,
         dataType: "json",
         type: "delete",
         success: function(){
             alert("record delted")
+            window.location.replace("blog_posts.html")
         }
     })
+})
+
+const editUrl = "edit.html?id=" + id;
+$("#edit_post").click(function(event){
+    event.preventDefault();
+    window.location.replace(editUrl)
 })

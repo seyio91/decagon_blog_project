@@ -19,9 +19,22 @@
     <div id="blogview">
         Blog Content
     </div>
+    <button type="submit" id="edit_post">Edit Record</button>
     <button type="submit" id="delete_test">Delete Record</button>
     <div id="comments">
-        <h1>User Comments</h1>
+        <h1>User Feedback</h1>
+        <form action="">
+            <label for="name"> Name </label>
+            <input type="text" id="comment_name">
+            <label for="email"> Email </label>
+            <input type="text" id="comment_email">
+            <label for="comment"> Comment </label>
+            <textarea id="comment_body"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="all_comments">
+            <p>Comments</p>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->

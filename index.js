@@ -27,8 +27,7 @@ $(document).ready(function(){
 		if (blog_title == "" || blog_author === "" || blog_tags === "" || blog_post === "" ){
 			alert("Complete all required fields")
         } else {
-           $.post("http://localhost:3000/blog_posts", data, alert("New Post Created")
-           )
+           $.post("http://localhost:3000/blog_posts", data, alert("New Post Created"))
            reset();
         //console.log("data was posted")
 		}
