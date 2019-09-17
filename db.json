@@ -43,7 +43,7 @@
       "author": "James Gordon",
       "title": "My First Blog Post edited",
       "image_src": "images/cat.jpg",
-      "blog_main": "i definitely do not like blogging but here's my first post",
+      "blog_main": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eum deserunt, voluptatum fugit dolores dolorum sunt id excepturi qui. Et numquam corrupti ratione harum reiciendis voluptate impedit nobis aliquam ipsa reprehenderit ipsum non voluptatem voluptatibus doloribus sapiente, tempore temporibus? Earum perferendis aliquam nisi veniam eos suscipit accusantium et est sequi, nam error eum dolorem. Accusantium id, deserunt, earum aut commodi ea asperiores quos maiores consequatur fugit nulla dignissimos. Eligendi magni quod quis voluptatibus explicabo ea voluptas ratione, minima earum velit consequuntur odit veritatis similique molestiae saepe at ut fugiat ipsam adipisci numquam vel, eaque pariatur? Quo sed reprehenderit soluta optio",
       "tags": "fashion",
       "id": 1
     },
@@ -51,7 +51,7 @@
       "author": "Seyi Obaweya",
       "title": "Hello World",
       "image_src": "",
-      "blog_main": "My first Blog Post",
+      "blog_main": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eum deserunt, voluptatum fugit dolores dolorum sunt id excepturi qui. Et numquam corrupti ratione harum reiciendis voluptate impedit nobis aliquam ipsa reprehenderit ipsum non voluptatem voluptatibus doloribus sapiente, tempore temporibus? Earum perferendis aliquam nisi veniam eos suscipit accusantium et est sequi, nam error eum dolorem. Accusantium id, deserunt, earum aut commodi ea asperiores quos maiores consequatur fugit nulla dignissimos. Eligendi magni quod quis voluptatibus explicabo ea voluptas ratione, minima earum velit consequuntur odit veritatis similique molestiae saepe at ut fugiat ipsam adipisci numquam vel, eaque pariatur? Quo sed reprehenderit soluta optio",
       "tags": "fashion",
       "id": 2
     },
@@ -59,17 +59,9 @@
       "author": "Seyi Obaweya",
       "title": "Hello World version 2",
       "image_src": "",
-      "blog_main": "My second Blog Post",
+      "blog_main": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eum deserunt, voluptatum fugit dolores dolorum sunt id excepturi qui. Et numquam corrupti ratione harum reiciendis voluptate impedit nobis aliquam ipsa reprehenderit ipsum non voluptatem voluptatibus doloribus sapiente, tempore temporibus? Earum perferendis aliquam nisi veniam eos suscipit accusantium et est sequi, nam error eum dolorem. Accusantium id, deserunt, earum aut commodi ea asperiores quos maiores consequatur fugit nulla dignissimos. Eligendi magni quod quis voluptatibus explicabo ea voluptas ratione, minima earum velit consequuntur odit veritatis similique molestiae saepe at ut fugiat ipsam adipisci numquam vel, eaque pariatur? Quo sed reprehenderit soluta optio",
       "tags": "lifestyle",
       "id": 3
-    },
-    {
-      "author": "Seyi Obaweyas",
-      "title": "test",
-      "image_src": "",
-      "blog_main": "fith",
-      "tags": "lifestyle",
-      "id": 4
     }
   ],
   "comments": [
