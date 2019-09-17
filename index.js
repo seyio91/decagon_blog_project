@@ -34,11 +34,11 @@ $(document).ready(function(){
     })
 
     $.get("http://localhost:3000/blog_posts", function(data){
-        console.log(data);
+        data = data.reverse()
         for (let i = 0; i < data.length; i++){
             $("#blog_display").append(`<li class="list-group-item">
             <article>
-            <h2><a href="views.html?id=${data[i].id}">${data[i].title} March 21 - April 19</a></h2>
+            <h2><a href="views.html?id=${data[i].id}">${data[i].title}</a></h2>
             <div class="row">
                 <div class="group1 col-sm-6 col-md-6">
                         <i class="fas fa-folder-open"></i>  <a href="#">Signs</a>

@@ -38,7 +38,10 @@
                 <div class="col-md-8">
                     -- LATEST POSTS --
                     <article>
-                            <h2><a href="singlepost.html">Aries Sun Sign March 21 - April 19</a></h2>
+                        <div id="postbody">
+                            <div id="post_header">
+                                    <h2>${data.title}</h2>
+                                </div>
                          
                             <div class="row">
                                 <div class="group1 col-sm-6 col-md-6">
@@ -58,9 +61,11 @@
                          
                             <br />
                          
-                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eum deserunt, voluptatum fugit dolores dolorum sunt id excepturi qui. Et numquam corrupti ratione harum reiciendis voluptate impedit nobis aliquam ipsa reprehenderit ipsum non voluptatem voluptatibus doloribus sapiente, tempore temporibus? Earum perferendis aliquam nisi veniam eos suscipit accusantium et est sequi, nam error eum dolorem. Accusantium id, deserunt, earum aut commodi ea asperiores quos maiores consequatur fugit nulla dignissimos. Eligendi magni quod quis voluptatibus explicabo ea voluptas ratione, minima earum velit consequuntur odit veritatis similique molestiae saepe at ut fugiat ipsam adipisci numquam vel, eaque pariatur? Quo sed reprehenderit soluta optio.</p>
-                         
-                            <p>The symbol of Aries is the Ram, and that's both good and bad news. Impulsive Aries might be tempted to ram their ideas down everyone's throats without even bothering to ask if they want to know. It's these times when you may wish Aries' symbol were a more subdued creature, more lamb than ram perhaps. You're not likely to convince the Ram to soften up; these folks are blunt and to the point. Along with those qualities comes the sheer force of the Aries nature, a force that can actually accomplish a great deal. Much of Aries' drive to compete and to win comes from its Cardinal Quality. Cardinal Signs love to get things going, and Aries exemplifies this even better than Cancer, Libra or Capricorn.</p>
+                            <p class="lead">
+                                <div id="post_body">
+                                    <p>${data.blog_main}</p>
+                                </div>
+                            </p>
                          
                             <p class="text-right">
                                 <a href="singlepost.html" class="text-right">
@@ -69,6 +74,7 @@
                             </p>
                          
                             <hr>
+                            </div>
                         </article>
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
@@ -176,6 +182,7 @@
     <div id="blogview">
         Blog Content
     </div>
+    <!--Do not  touch-->
     <button type="submit" id="edit_post">Edit Record</button>
     <button type="submit" id="delete_test">Delete Record</button>
     <a href="blog_posts.html">Back to Blog Post</a>
