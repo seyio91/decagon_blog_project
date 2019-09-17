@@ -86,7 +86,7 @@ $("#comment_submit").click(function(event){
 	const c_email = $("#comment_email").val();
 	const blogpost = $("#comment_body").val();
     const c_body = Number(id);
-    const cData = {
+    var cData = {
         cName : c_name,
         cEmail : c_email,
         blog_id : c_body,
@@ -96,9 +96,20 @@ $("#comment_submit").click(function(event){
         alert("Complete all required fields")
     } else {
         console.log(`this should post the following data ${c_name} and ${c_email} and ${blogpost} and ${c_body}`)
-       $.post("http://localhost:3000/comments", cData, alert("New Post Created"));
-       cReset();
-       window.location.replace(rUrl);
+       //$.post("http://localhost:3000/comments", cData, console.log(cData));
+    //    $.post("http://localhost:3000/comments", cData, alert("New Post Created"));
+       $.ajax({
+        url: "http://localhost:3000/comments",
+        data: cData,
+        dataType: "json",
+        type: "post",
+        success: function(){
+            alert("New Post")
+            window.location.replace(rUrl + "#comment_list");
+        }
+    });
+       //cReset();
+       //window.location.replace(rUrl);
        
     }
 })
@@ -108,6 +119,7 @@ $("#comment_submit").click(function(event){
 const cUrl = "http://localhost:3000/comments/?blog_id=" + id 
 $.get(cUrl, function(data){
     console.log(data);
+    data = data.reverse();
     for (let i = 0; i < data.length; i++){
         $("#comment_list").append(`
             <li class="comment">
