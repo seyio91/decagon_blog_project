@@ -36,17 +36,33 @@ $(document).ready(function(){
     $.get("http://localhost:3000/blog_posts", function(data){
         console.log(data);
         for (let i = 0; i < data.length; i++){
-            $("#blog_display").append(`<li>
-            <div id="postbody">
-                <div id="post_header">
-                    <p>${data[i].title}</p>
+            $("#blog_display").append(`<li class="list-group-item">
+            <article>
+            <h2><a href="views.html?id=${data[i].id}">${data[i].title} March 21 - April 19</a></h2>
+            <div class="row">
+                <div class="group1 col-sm-6 col-md-6">
+                        <i class="fas fa-folder-open"></i>  <a href="#">Signs</a>
+                        <i class="fas fa-bookmark"></i> <a href="#">Aries</a>,
+                        <a href="#">Fire</a>, <a href="#">Mars</a>
                 </div>
-                <div id="post_body">
-                    <p>${data[i].blog_main.slice(0,100)}...</p>
-                    <button type="submit" id="readMore"> Read More </button>
-                <a id="readME" href="views.html?id=${data[i].id}"> Read Me</a>
+                <div class="group2 col-sm-6 col-md-6">
+                        <i class="fas fa-user-edit"></i> <a href="#">20 Comments</a>
+                        <i class="far fa-clock"></i> August 24, 2013 9:00 PM
                 </div>
             </div>
+            <hr>
+            <img src="./images/ThumperDC.jpg" class="img-fluid">
+            <br />
+            <p class="lead">${data[i].blog_main.slice(0,100)}...</p>
+         
+            <p class="text-right">
+                <a href="views.html?id=${data[i].id}" class="text-right">
+                    continue reading...
+                </a>
+            </p>
+         
+            <hr>
+            </article>
             </li>
             `)
         }
