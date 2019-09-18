@@ -16,11 +16,13 @@ $(document).ready(function(){
 		const blog_tags = $("#tags").val();
         const blog_image = $("#image").val();
         const blog_post = $("#blogpost").val();
+        const todayDate = new Date();
 		const data = {
             author : blog_author,
             title : blog_title,
             image_src : blog_image,
             blog_main : blog_post,
+            date: todayDate,
             tags : blog_tags
         }
 		//validation before posting 
@@ -46,8 +48,7 @@ $(document).ready(function(){
                         <a href="#">Fire</a>, <a href="#">Mars</a>
                 </div>
                 <div class="group2 col-sm-6 col-md-6">
-                        <i class="fas fa-user-edit"></i> <a href="#">20 Comments</a>
-                        <i class="far fa-clock"></i> August 24, 2013 9:00 PM
+                        <i class="far fa-clock"></i>${data[i].date.slice(0,24)}
                 </div>
             </div>
             <hr>
@@ -65,49 +66,20 @@ $(document).ready(function(){
             </article>
             </li>
             `)
+            $("#featured_titles").append(`<li class="list-group-item"><a href="views.html?id=${data[i].id}">${data[i].title}</a></li>`)
         }
+    });
+
+    //Calling Categories
+    $.get("http://localhost:3000/tags", function(data){
+        console.log(data);
+        for (let i = 0; i < data.length; i++){
+            $("#category_view").append(`
+                <li class="list-group-item">${data[i]}</li>
+                `)
+        }    
     });
 
 
 }) //waits for document to be loaded before execution
 
-// http://localhost:3000/blog_posts/{id}
-// //getting values from each field
-// var firstName = $("input#firstname").val();
-// var lastName  = $("input#lastname").val();
-// var userName  = $("input#username").val();
-// var password = $("input#password").val();
-// var gender = $("select#gender").val();
-// var terms = ( $('input[type="checkbox"]').prop("checked") == true) ? true: false;
-
-
-// var submit = $("button#form-submit").on("click", function(){
-//     event.preventDefault(); //prevents default action
-//     var profile = {
-//         "firstName": $("input#firstname").val(),
-//         "lastName": $("input#lastname").val(),
-//         "userName": $("input#username").val(),
-//         "password": $("input#password").val(),
-//         "gender": $("select#gender").val(),
-//         "terms": terms
-//     }
-// })
-
-// // const form = document.getElementsByClassName("main-form")[0]
-
-// // const data = getFormDataAsJSON(form);
-
-// // const handleFormSubmit = event => {
-
-// //     // Stop the form from submitting since we’re handling that with AJAX.
-// //     event.preventDefault();
-  
-// //     // TODO: Call our function to get the form data.
-// //     const data = {};
-
-  
-// //     // Use `JSON.stringify()` to make the output valid, human-readable JSON.
-// //     dataContainer.textContent = JSON.stringify(data, null, "  ");
-  
-// //     // ...this is where we’d actually do something with the form data...
-// //   };

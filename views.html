@@ -11,7 +11,8 @@
 
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="./css/all.css">
 
     <title>View BlogPost</title>
   </head>
@@ -39,9 +40,10 @@
                     -- LATEST POSTS --
                     <div id="blogview">
                         Blog Content
+                        <!-- Content code runs here -->
                     </div>
                     <button type="submit" id="edit_post">Edit Record</button>
-                    <button type="submit" id="delete_test">Delete Record</button>
+                    <button class="btn btn-default" id="btn-confirm">Delete Post</button>
                     
                         <!--Navigation Starts here-->
                         <nav aria-label="Page navigation example">
@@ -50,16 +52,16 @@
                             </ul>
                     </nav>
                     <!--Test Modal Creation-->
-                    <button class="btn btn-default" id="btn-confirm">Confirm</button>
 
                     <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="mi-modal">
-                    <div class="modal-dialog modal-sm">
+                    <div class="modal-dialog modal-sm" role="document">
                         <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h4 class="modal-title" id="myModalLabel">Confirmar</h4>
-                        </div>                            <div class="modal-footer">
-                          <button type="button" class="btn btn-default" id="modal-btn-si">Si</button>
+                        </div>                            
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" id="modal-btn-si">Si</button>
                             <button type="button" class="btn btn-primary" id="modal-btn-no">No</button>
                         </div>
                     </div>
@@ -113,10 +115,8 @@
                                     Featured
                             </div>
                             <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
+                                <ul class="list-group list-group-flush" id="featured_titles">
+                                    <!--Dynamic Titles-->
                                 </ul>
                             </div>
                             
@@ -126,10 +126,8 @@
                                     Category
                             </div>
                             <div class="card-body">
-                                <ul class="list-inline">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
+                                <ul class="list-inline" id="category_view">
+                                    <!--Dynamic Category-->
                                 </ul>
                             </div>
                     </div>
@@ -172,5 +170,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="views.js"></script>
+    <script type="text/javascript" src="./all.js"></script>
   </body>
 </html>

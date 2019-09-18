@@ -14,6 +14,7 @@ $(document).ready(function(){
         $("#edit_tags").val(data.tags);
         $("#edit_image").val(data.image_src);
         $("#edit_blogpost").val(data.blog_main);
+        const editDate = data.date;
     });
 
 	//add user to json file
@@ -24,12 +25,14 @@ $(document).ready(function(){
 		const blog_tags = $("#edit_tags").val();
         const blog_image = $("#edit_image").val();
         const blog_post = $("#edit_blogpost").val();
+        const todayDate = new Date();
 		const data = {
             author : blog_author,
             title : blog_title,
             image_src : blog_image,
             blog_main : blog_post,
-            tags : blog_tags
+            tags : blog_tags,
+            date: todayDate
         }
 		//validation before posting 
 		if (blog_title == "" || blog_author === "" || blog_tags === "" || blog_post === "" ){

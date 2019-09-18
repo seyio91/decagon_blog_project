@@ -23,13 +23,11 @@ $.get(url, function(data){
          
             <div class="row">
                 <div class="group1 col-sm-6 col-md-6">
-                        <i class="fas fa-folder-open"></i>  <a href="#">Signs</a>
-                        <i class="fas fa-bookmark"></i> <a href="#">Aries</a>,
-                        <a href="#">Fire</a>, <a href="#">Mars</a>
+                        <i class="fas fa-folder-open"></i>  <a href="#" id="uvuavf">  ${data.tags}</a>
                 </div>
                 <div class="group2 col-sm-6 col-md-6">
-                        <i class="fas fa-user-edit"></i> <a href="singlepost.html#comments">20 Comments</a>
-                        <i class="far fa-clock"></i> August 24, 2013 9:00 PM
+                        <i class="fas fa-user-edit"></i><span id="commentCount"></span> Comments
+                        <i class="far fa-clock"></i>   ${data.date.slice(0,24)}
                 </div>
             </div>
          
@@ -52,18 +50,7 @@ $.get(url, function(data){
         
 });
 
-$("#delete_test").click(function(){
-    event.preventDefault();
-    $.ajax({
-        url: url,
-        dataType: "json",
-        type: "delete",
-        success: function(){
-            alert("record deleted")
-            window.location.replace("blog_posts.html")
-        }
-    })
-})
+
 
 const editUrl = "edit.html?id=" + id;
 $("#edit_post").click(function(event){
@@ -86,18 +73,18 @@ $("#comment_submit").click(function(event){
 	const c_email = $("#comment_email").val();
 	const blogpost = $("#comment_body").val();
     const c_body = Number(id);
+    const todayDate = new Date();
     var cData = {
         cName : c_name,
         cEmail : c_email,
         blog_id : c_body,
+        date: todayDate,
         cBody : blogpost
     }
     if (blogpost == "" || c_name === "" ){
         alert("Complete all required fields")
     } else {
         console.log(`this should post the following data ${c_name} and ${c_email} and ${blogpost} and ${c_body}`)
-       //$.post("http://localhost:3000/comments", cData, console.log(cData));
-    //    $.post("http://localhost:3000/comments", cData, alert("New Post Created"));
        $.ajax({
         url: "http://localhost:3000/comments",
         data: cData,
@@ -105,7 +92,10 @@ $("#comment_submit").click(function(event){
         type: "post",
         success: function(){
             alert("New Post")
-            window.location.replace(rUrl + "#comment_list");
+            //
+            populator(cUrl)
+            window.location.replace(rUrl);
+            cReset();
         }
     });
        //cReset();
@@ -116,23 +106,103 @@ $("#comment_submit").click(function(event){
 
 //display comments
 //get comments using id
-const cUrl = "http://localhost:3000/comments/?blog_id=" + id 
-$.get(cUrl, function(data){
-    console.log(data);
-    data = data.reverse();
-    for (let i = 0; i < data.length; i++){
-        $("#comment_list").append(`
-            <li class="comment">
-            <div class="clearfix">
-                <h4 class="pull-left">${data[i].cName}</h4>
-                <p class="pull-right">9:41 PM on August 24, 2013</p>
-            </div>
-            <p>
-                <em>${data[i].cBody}</em>
-            </p>
-        </li>
+    const cUrl = "http://localhost:3000/comments/?blog_id=" + id 
+function populator(cUrl){
+    $.get(cUrl, function(data){
+        console.log(data);
+        data = data.reverse();
+        $('#commentCount').append(`  ${data.length}`)
+        for (let i = 0; i < data.length; i++){
+            $("#comment_list").append(`
+                <li class="comment">
+                <div class="clearfix">
+                    <h4 class="pull-left">${data[i].cName}</h4>
+                    <p class="pull-right">9:41 PM on August 24, 2013</p>
+                </div>
+                <p>
+                    <em>${data[i].cBody}</em>
+                </p>
+            </li>
 
 
-            `)
-    }    
-});
+                `)
+        }    
+    });
+}
+
+populator(cUrl);
+
+// var modalConfirm = function(callback){
+  
+    $("#btn-confirm").on("click", function(event){
+        event.preventDefault();
+      $("#mi-modal").modal('show');
+      
+    });
+  
+    $("#modal-btn-si").on("click", function(){
+        event.preventDefault();
+        console.log("i clicked the modal")
+    //   callback(true);
+      $("#mi-modal").modal('hide');
+      $.ajax({
+        url: url,
+        dataType: "json",
+        type: "delete",
+        success: function(){
+            alert("record deleted")
+            window.location.replace("blog_posts.html")
+        }
+    })
+    //delte the comments for that blog
+    $.get(cUrl, function(data){
+        console.log(data);
+        for (let i = 0; i < data.length; i++){
+            var cUid = "http://localhost:3000/comments/" + Number(data[i].id);
+            console.log(`comment ${data[i].id} to be deleted for blog id ${data[i].blog_id}`)
+            $.ajax({
+                url: cUid,
+                dataType: "json",
+                type: "delete",
+                success: function(){
+                    console.log(`comment ${i} deleted`)
+                }
+            })
+        }
+    });
+
+    });
+
+    
+    $("#modal-btn-no").on("click", function(){
+    //   callback(false);
+      $("#mi-modal").modal('hide');
+    });
+//   };
+  
+//   modalConfirm(function(confirm){
+//     if(confirm){
+//       //Acciones si el usuario confirma
+//       $("#result").html("CONFIRMADO");
+//     }else{
+//       //Acciones si el usuario no confirma
+//       $("#result").html("NO CONFIRMADO");
+//     }
+//   });
+
+
+//   $("#delete_test").click(function(){
+//     event.preventDefault();
+//     $.ajax({
+//         url: url,
+//         dataType: "json",
+//         type: "delete",
+//         success: function(){
+//             alert("record deleted")
+//             window.location.replace("blog_posts.html")
+//         }
+//     })
+// })
+
+console.log(String(new Date()).slice(0,24))
+console.log(new Date())

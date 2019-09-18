@@ -45,6 +45,7 @@
       "image_src": "images/cat.jpg",
       "blog_main": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eum deserunt, voluptatum fugit dolores dolorum sunt id excepturi qui. Et numquam corrupti ratione harum reiciendis voluptate impedit nobis aliquam ipsa reprehenderit ipsum non voluptatem voluptatibus doloribus sapiente, tempore temporibus? Earum perferendis aliquam nisi veniam eos suscipit accusantium et est sequi, nam error eum dolorem. Accusantium id, deserunt, earum aut commodi ea asperiores quos maiores consequatur fugit nulla dignissimos. Eligendi magni quod quis voluptatibus explicabo ea voluptas ratione, minima earum velit consequuntur odit veritatis similique molestiae saepe at ut fugiat ipsam adipisci numquam vel, eaque pariatur? Quo sed reprehenderit soluta optio",
       "tags": "fashion",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
       "id": 1
     },
     {
@@ -53,6 +54,7 @@
       "image_src": "",
       "blog_main": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eum deserunt, voluptatum fugit dolores dolorum sunt id excepturi qui. Et numquam corrupti ratione harum reiciendis voluptate impedit nobis aliquam ipsa reprehenderit ipsum non voluptatem voluptatibus doloribus sapiente, tempore temporibus? Earum perferendis aliquam nisi veniam eos suscipit accusantium et est sequi, nam error eum dolorem. Accusantium id, deserunt, earum aut commodi ea asperiores quos maiores consequatur fugit nulla dignissimos. Eligendi magni quod quis voluptatibus explicabo ea voluptas ratione, minima earum velit consequuntur odit veritatis similique molestiae saepe at ut fugiat ipsam adipisci numquam vel, eaque pariatur? Quo sed reprehenderit soluta optio",
       "tags": "lifestyle",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
       "id": 3
     },
     {
@@ -61,7 +63,17 @@
       "image_src": "",
       "blog_main": "That was like a nice tour, isn't it? I hope you enjoyed it. In constructing all those four pages, we've learn't many interesting things from Bootstrap. In creating the home page, we saw about bootstrap components and amazed how easily we can roll out a navigation header that delivers best user experience for both desktop and mobile users. We also surprised by seeing the power of Grid Systems and how easily we can control the structure for each screen by applying proper CSS classes.",
       "tags": "lifestyle",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
       "id": 4
+    },
+    {
+      "author": "My Silly Author",
+      "title": "Blog Date Test",
+      "image_src": "",
+      "blog_main": "Hope you work, i am tired of trying",
+      "date": "Wed Sep 18 2019 17:24:17 GMT+0800 (Singapore Standard Time)",
+      "tags": "fashion",
+      "id": 5
     }
   ],
   "comments": [
@@ -70,6 +82,7 @@
       "cName": "Obaweya Seyi",
       "cEmail": "seyi_obaweya@yahoo.com",
       "blog_id": "1",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
       "cBody": "i hate your Post"
     },
     {
@@ -77,40 +90,14 @@
       "cName": "Seyi",
       "cEmail": "seyi_obaweya@yahoo.com",
       "blog_id": "1",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
       "cBody": "i hate your Post2"
-    },
-    {
-      "id": 3,
-      "cName": "Test3",
-      "cEmail": "seyi_obaweya@yahoo.com",
-      "blog_id": "2",
-      "cBody": "i hate your Post"
-    },
-    {
-      "cName": "name",
-      "cEmail": "email",
-      "blog_id": "2",
-      "cBody": "hgfditgyiadtgiagiugti",
-      "id": 4
-    },
-    {
-      "cName": "name2",
-      "cEmail": "email123",
-      "blog_id": "2",
-      "cBody": "test number 4",
-      "id": 5
-    },
-    {
-      "cName": "Commentter 2",
-      "cEmail": "comment@deleted",
-      "blog_id": "2",
-      "cBody": "Please Delete after",
-      "id": 6
     },
     {
       "cName": "oiyoiyiohoi",
       "cEmail": "hiohioyoiyio",
       "blog_id": "1",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
       "cBody": "oihiohiohiohiohm",
       "id": 7
     },
@@ -118,6 +105,7 @@
       "cName": "hlhhho",
       "cEmail": "ooioiopjp",
       "blog_id": "1",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
       "cBody": "jpjiouoioihohuhguihuohouhoho",
       "id": 8
     },
@@ -125,6 +113,7 @@
       "cName": "yufu7778t8t8t88",
       "cEmail": "ssdfghjkcvbnm",
       "blog_id": "1",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
       "cBody": "fghj4567890hxxgfghccfhchcccghchchhcchcjcj",
       "id": 9
     },
@@ -132,8 +121,63 @@
       "cName": "comment 68",
       "cEmail": "hiugip[opohuihuohohoij",
       "blog_id": "1",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
       "cBody": "hohohohoihoihoihoihohohhhojhlkhlhlkhlkh",
       "id": 10
+    },
+    {
+      "cName": "name",
+      "cEmail": "email",
+      "blog_id": "3",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
+      "cBody": "file names ",
+      "id": 11
+    },
+    {
+      "cName": "Test Comment 4",
+      "cEmail": "email@comment4",
+      "blog_id": "3",
+      "cBody": "Yes to see what got posted",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
+      "id": 12
+    },
+    {
+      "cName": "giGYFUYFUgfiytiyut",
+      "cEmail": "ig8yy8rtiygtiu",
+      "blog_id": "3",
+      "cBody": "giyiufriytgiuytiuti7gfuyf",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
+      "id": 13
+    },
+    {
+      "cName": "aifiuyoug",
+      "cEmail": "ougiyigigoug",
+      "blog_id": "3",
+      "cBody": "kvhgkgkjkugkgk",
+      "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
+      "id": 14
+    },
+    {
+      "cName": "Hello",
+      "cEmail": "uyigouohgo",
+      "blog_id": "3",
+      "date": "Wed Sep 18 2019 19:20:11 GMT+0800 (Singapore Standard Time)",
+      "cBody": "tigiyutgiouhioyhoihiohyjugukghjfgjhghkgkut",
+      "id": 15
+    },
+    {
+      "cName": "a79y9uoh",
+      "cEmail": "igtiyiygigi",
+      "blog_id": "3",
+      "date": "Wed Sep 18 2019 21:21:11 GMT+0800 (Singapore Standard Time)",
+      "cBody": "giugiugiugiu",
+      "id": 16
     }
+  ],
+  "tags": [
+    "fashion",
+    "lifestyle",
+    "adventure",
+    "sex"
   ]
 }
