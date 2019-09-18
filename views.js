@@ -117,7 +117,7 @@ function populator(cUrl){
                 <li class="comment">
                 <div class="clearfix">
                     <h4 class="pull-left">${data[i].cName}</h4>
-                    <p class="pull-right">9:41 PM on August 24, 2013</p>
+                    <p class="pull-right"> ${data[i].date}</p>
                 </div>
                 <p>
                     <em>${data[i].cBody}</em>

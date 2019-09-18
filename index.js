@@ -1,4 +1,14 @@
 $(document).ready(function(){
+    //my dynamic tags function
+    $.get("http://localhost:3000/tags", function(data){
+        for (let val of data){
+            $('#tags').append(`
+            <option value="${val}" >${val}</option>
+            `)
+        }
+    })
+
+
 	function reset(){
         //$('form :input').attr('value', '')
         $("#title").val("");
