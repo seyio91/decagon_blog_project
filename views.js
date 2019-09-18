@@ -18,8 +18,8 @@ $.get(url, function(data){
         <article>
         <div id="postbody">
             <div id="post_header">
-                    <h2>${data.title}</h2>
-                </div>
+                <h2>${data.title}</h2>
+            </div>
          
             <div class="row">
                 <div class="group1 col-sm-6 col-md-6">

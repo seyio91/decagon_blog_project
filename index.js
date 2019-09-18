@@ -85,7 +85,7 @@ $(document).ready(function(){
         console.log(data);
         for (let i = 0; i < data.length; i++){
             $("#category_view").append(`
-                <li class="list-group-item">${data[i]}</li>
+                <li class="list-group-item"><a href="tag_post.html?tag=${data[i]}">${data[i]}</a></li>
                 `)
         }    
     });
