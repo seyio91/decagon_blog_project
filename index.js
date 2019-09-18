@@ -53,9 +53,8 @@ $(document).ready(function(){
             <h2><a href="views.html?id=${data[i].id}">${data[i].title}</a></h2>
             <div class="row">
                 <div class="group1 col-sm-6 col-md-6">
-                        <i class="fas fa-folder-open"></i>  <a href="#">Signs</a>
-                        <i class="fas fa-bookmark"></i> <a href="#">Aries</a>,
-                        <a href="#">Fire</a>, <a href="#">Mars</a>
+                        <i class="fas fa-folder-open"></i>  <a href="tag_post.html?tag=${data[i].tags}">${data[i].tags}</a>
+    
                 </div>
                 <div class="group2 col-sm-6 col-md-6">
                         <i class="far fa-clock"></i>${data[i].date.slice(0,24)}
