@@ -59,30 +59,30 @@ $(document).ready(function(){
         data = data.reverse();
         for (let i = 0; i < data.length; i++){
             $("#blog_display").append(`<li class="list-group-item post" id="post">
-            <article>
+            <!--<article>-->
             <h2><a href="views.html?id=${data[i].id}">${data[i].title}</a></h2>
             <div class="row">
                 <div class="group1 col-sm-6 col-md-6">
                         <i class="fas fa-folder-open"></i>  <a href="tag_post.html?tag=${data[i].tags}">${data[i].tags}</a>
     
                 </div>
-                <div class="group2 col-sm-6 col-md-6"><span>By ${data[i].author}</span>
+                <div class="group2 col-sm-6 col-md-6 text-right"><span>By ${data[i].author}</span>
                         <i class="far fa-clock"></i>     ${data[i].date.slice(0,24)}
                 </div>
             </div>
             <hr>
-            <img src="./images/${data[i].image_src}" class="img-fluid">
+            <div class="text-center">
+                <img src="./images/${data[i].image_src}" class="img-fluid img-thumbnail">
+            </div>
             <br />
             <p class="lead">${data[i].blog_main.slice(0,100)}...</p>
          
             <p class="text-right">
                 <a href="views.html?id=${data[i].id}" class="text-right">
-                    continue reading...
+                    continue reading>>>
                 </a>
             </p>
-         
-            <hr>
-            </article>
+            <!--</article>-->
             </li>
             `)
             $("#featured_titles").append(`<li class="list-group-item" id="titlePost"><a href="views.html?id=${data[i].id}">${data[i].title}</a></li>`)

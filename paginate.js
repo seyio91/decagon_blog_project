@@ -15,13 +15,13 @@ $.fn.customPaginate = function(options){
     itemsToPaginate = $(settings.itemsToPaginate);
     //console.log(itemsToPaginate)
     var numberOfPaginationLinks = Math.ceil((itemsToPaginate.length / itemsPerPage));
-    $(`<ul id="testPaginate" ></ul>`).prependTo(paginationContainer);
+    $(`<ul id="testPaginate" class="pagination" ></ul>`).prependTo(paginationContainer);
 
     console.log(`i should see number of links here`)
     console.log(numberOfPaginationLinks)
 
     for (var index=0; index < numberOfPaginationLinks; index++){
-        paginationContainer.find("ul#testPaginate").append(`<li>${index+1}</li>`);
+        paginationContainer.find("ul#testPaginate").append(`<li class="page-item page-link">${index+1}</li>`);
     }
 
     itemsToPaginate.filter(`:gt(${itemsPerPage - 1})`).hide();
