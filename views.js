@@ -158,7 +158,7 @@ populator(cUrl);
             window.location.replace("blog_posts.html")
         }
     })
-    //delte the comments for that blog
+    //delete the comments for that blog
     $.get(cUrl, function(data){
         console.log(data);
         for (let i = 0; i < data.length; i++){
@@ -182,31 +182,6 @@ populator(cUrl);
     //   callback(false);
       $("#mi-modal").modal('hide');
     });
-//   };
-  
-//   modalConfirm(function(confirm){
-//     if(confirm){
-//       //Acciones si el usuario confirma
-//       $("#result").html("CONFIRMADO");
-//     }else{
-//       //Acciones si el usuario no confirma
-//       $("#result").html("NO CONFIRMADO");
-//     }
-//   });
-
-
-//   $("#delete_test").click(function(){
-//     event.preventDefault();
-//     $.ajax({
-//         url: url,
-//         dataType: "json",
-//         type: "delete",
-//         success: function(){
-//             alert("record deleted")
-//             window.location.replace("blog_posts.html")
-//         }
-//     })
-// })
 
 console.log(String(new Date()).slice(0,24))
 console.log(new Date())

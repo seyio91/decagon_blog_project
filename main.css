@@ -12,7 +12,7 @@ body{
     margin:0;
     overflow: hidden;
     height: 400px;
-    background-image: url("./images/Unknown-2.jpeg");
+    background-image: url("./images/johannes-mandle-Xk2Pl7CMKYY-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: 100% 700px;
     background-position: top center;
@@ -20,18 +20,35 @@ body{
 }
 
 #main_logo{
-    position: absolute;
-    width: 100px;
-    height: 180px;
-    background-image: url("./images/logo.png");
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background-image: url("./images/king-800x800.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 180px;
-    top: 50%;
-    margin-top: -90px;
+    top: -10%;
+    margin: auto;
+    
 }
 
 .img-fluid {
-    width: 200px;
+    width: 40%;
     height: 200px;
+    margin: auto;
+}
+
+.features_title {
+    text-align: center  !important;
+    margin: 20px;
+    padding: 10px;
+    left: 20px;
+}
+
+a {
+    color: rgba(24, 21, 21, 0.623);
+}
+
+#fullsideBar {
+    margin-top: 32%;
 }

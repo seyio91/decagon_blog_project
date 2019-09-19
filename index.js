@@ -110,7 +110,8 @@ $(document).ready(function(){
                 `)
         }    
     });
-
+let test = $("#StatusLike").text()
+console.log(test)
 
 }) //waits for document to be loaded before execution
 
