@@ -2,3 +2,31 @@
     width: 450px;
     margin: auto;
 }
+
+body{
+    padding-top: 50px;
+}
+#back-image {
+    position: relative;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+    height: 400px;
+    background-image: url("./images/Unknown-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+#main_logo{
+    position: absolute;
+    width: 100px;
+    height: 180px;
+    background-image: url("./images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 180px;
+    top: 50%;
+    margin-top: -90px;
+}
