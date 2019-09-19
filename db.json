@@ -42,7 +42,7 @@
     {
       "author": "James Gordon",
       "title": "My First Blog Post edited",
-      "image_src": "images/cat.jpg",
+      "image_src": "Unknown-3.jpeg",
       "blog_main": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eum deserunt, voluptatum fugit dolores dolorum sunt id excepturi qui. Et numquam corrupti ratione harum reiciendis voluptate impedit nobis aliquam ipsa reprehenderit ipsum non voluptatem voluptatibus doloribus sapiente, tempore temporibus? Earum perferendis aliquam nisi veniam eos suscipit accusantium et est sequi, nam error eum dolorem. Accusantium id, deserunt, earum aut commodi ea asperiores quos maiores consequatur fugit nulla dignissimos. Eligendi magni quod quis voluptatibus explicabo ea voluptas ratione, minima earum velit consequuntur odit veritatis similique molestiae saepe at ut fugiat ipsam adipisci numquam vel, eaque pariatur? Quo sed reprehenderit soluta optio",
       "tags": "fashion",
       "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
@@ -51,7 +51,7 @@
     {
       "author": "Seyi Obaweya",
       "title": "Hello World version 2",
-      "image_src": "",
+      "image_src": "Unknown.jpeg",
       "blog_main": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eum deserunt, voluptatum fugit dolores dolorum sunt id excepturi qui. Et numquam corrupti ratione harum reiciendis voluptate impedit nobis aliquam ipsa reprehenderit ipsum non voluptatem voluptatibus doloribus sapiente, tempore temporibus? Earum perferendis aliquam nisi veniam eos suscipit accusantium et est sequi, nam error eum dolorem. Accusantium id, deserunt, earum aut commodi ea asperiores quos maiores consequatur fugit nulla dignissimos. Eligendi magni quod quis voluptatibus explicabo ea voluptas ratione, minima earum velit consequuntur odit veritatis similique molestiae saepe at ut fugiat ipsam adipisci numquam vel, eaque pariatur? Quo sed reprehenderit soluta optio",
       "tags": "lifestyle",
       "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
@@ -60,7 +60,7 @@
     {
       "author": "New Author",
       "title": "Blog Post 3",
-      "image_src": "",
+      "image_src": "Unknown-1.jpeg",
       "blog_main": "That was like a nice tour, isn't it? I hope you enjoyed it. In constructing all those four pages, we've learn't many interesting things from Bootstrap. In creating the home page, we saw about bootstrap components and amazed how easily we can roll out a navigation header that delivers best user experience for both desktop and mobile users. We also surprised by seeing the power of Grid Systems and how easily we can control the structure for each screen by applying proper CSS classes.",
       "tags": "lifestyle",
       "date": "Wed Sep 18 2019 17:18:53 GMT+0800 (Singapore Standard Time)",
@@ -69,11 +69,110 @@
     {
       "author": "My Silly Author",
       "title": "Blog Date Test",
-      "image_src": "",
+      "image_src": "Unknown-2.jpeg",
       "blog_main": "Hope you work, i am tired of trying",
       "date": "Wed Sep 18 2019 17:24:17 GMT+0800 (Singapore Standard Time)",
       "tags": "fashion",
       "id": 5
+    },
+    {
+      "author": "Matthew Lowe",
+      "title": "Fire in Liberia",
+      "image_src": "Unknown-4.jpeg",
+      "blog_main": "Dozens of children were killed after a fire broke out at their religious school in Liberia on Wednesday. \n\nThe blaze started about midnight and gutted a dormitory and school building where students slept in Paynesville, on the outskirts of the Liberian capital, Monrovia, police spokesman Moses Carter said.\n\nAt least 26 young pupils and two teachers were killed, the president's office said. Carter said 27 students - between the ages of 10-20 - perished in the fire.\n\n\"The kids were learning the Quran when the fire broke out,\" he said.\n\nThe cause of the fire was under investigation.\n\nRescuers in white masks and surgical gloves carried the children's bodies in bags from the burned-out building as crowds of people and relatives crushed together outside. \n\nParents at the scene wailed and wept as police fought a surging crowd to make way for ambulances taking away the bodies.\n\nPastor Emmanuel Herbert from a nearby church told The Associated Press he and his congregation woke up to sounds of the fire and called for help.\n\n\"When I turned around to look the entire place was red. When I looked through the window, I saw the whole place blazing with fire,\" he said.\n\nThe fire was so strong there was no way to enter the buildings, the pastor said.\n\nPresident George Weah visited the site in Paynesville.",
+      "date": "Wed Sep 18 2019 21:11:51 GMT+0100 (WAT)",
+      "tags": "adventure",
+      "id": 6
+    },
+    {
+      "author": "Chukwudi Akasike",
+      "title": "Police Arrest in Port Harcourt Killings",
+      "image_src": "Unknown-3.jpeg",
+      "blog_main": "A source from Mile 4 said the woman began to raise the alarm when the man became violent and struggled with her as she tried to approach the door.\n\n“The woman went into the hotel on the man’s invitation and when she slept off, the man tried to kill her with a pillow. She was lucky to have woken up as the man tried to press her down.\n\n“The woman immediately began to shout and the people in the hotel called the police, who raced to the place and forced the door open. They (police) eventually rescued the woman and arrested the man,” the source said.\n\nConfirming the incident, the State CP said the suspected killer was arrested by his men when they got to the hotel, adding that a thorough investigation had commenced on the matter.\n\nSpeaking with our correspondent on Wednesday, the State Police Public Relations Officer, Mr. Nnamdi Omoni, said the suspect had been moved to the State Criminal Investigation Department of the Police Command.\n\n\n \nOmoni explained that preliminary investigation indicated that the suspected killer was an indigene of Akwa Ibom State.\n\nHe said, “The young woman escaped because she was able to raise the alarm around 2:00 a.m. She was sleeping when she suddenly woke up and saw the man who brought her to the hotel charging at her.\n\n“He is from Akwa Ibom and a builder. He told us he is a school dropout.\n\n“The people in the hotel called the police, who rushed to the place, rescued the young woman and arrested the man.”",
+      "date": "Wed Sep 18 2019 21:14:38 GMT+0100 (WAT)",
+      "tags": "adventure",
+      "id": 7
+    },
+    {
+      "author": "Optional",
+      "title": "Test Blog 1",
+      "image_src": "Unknown-1.jpeg",
+      "blog_main": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi molestiae maiores ullam? Fugiat, fugit consequatur? Architecto aliquam ducimus minima dolor facere, dicta dolores amet quasi ullam commodi veritatis a temporibus voluptatem error velit quae eveniet nemo cum consequuntur reprehenderit, doloribus est minus explicabo mollitia? Facere voluptate nisi quam unde vel, rerum atque, sequi incidunt iste illo, blanditiis asperiores qui aspernatur doloremque quo porro perferendis aut commodi excepturi eaque! Quis asperiores tempore iste quia laudantium sit, a harum odit minus debitis! Asperiores dolorum omnis, commodi temporibus aut quibusdam illum ex nostrum veniam assumenda tenetur ad, quidem cumque consequuntur, ducimus amet ipsum!",
+      "date": "Wed Sep 18 2019 21:36:58 GMT+0100 (WAT)",
+      "tags": "sex",
+      "id": 8
+    },
+    {
+      "author": "another One",
+      "title": "Test Blog New 3",
+      "image_src": "Unknown-3.jpeg",
+      "blog_main": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellat, in consequatur iusto, distinctio adipisci ipsum beatae voluptatem dolorum qui facere? Minima explicabo eaque unde nulla molestiae odit omnis eligendi quaerat itaque quo? Consequatur voluptatum voluptas, sequi veniam quia doloribus aliquam quas eius dolores officiis in perferendis placeat? Dolores hic beatae quae qui voluptatum nulla error, deserunt magnam, eveniet cupiditate, quisquam temporibus impedit nostrum dolorum! At maiores cum blanditiis temporibus, molestias, eaque itaque, sunt beatae voluptatum omnis optio laborum dicta facilis quia dolore! Qui quam porro fugit blanditiis soluta eos placeat corporis minima repellendus, inventore id commodi, laudantium perferendis nostrum?",
+      "date": "Wed Sep 18 2019 21:37:50 GMT+0100 (WAT)",
+      "tags": "sex",
+      "id": 9
+    },
+    {
+      "author": "Repeated",
+      "title": "To be Repeated",
+      "image_src": "Unknown.jpeg",
+      "blog_main": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellat, in consequatur iusto, distinctio adipisci ipsum beatae voluptatem dolorum qui facere? Minima explicabo eaque unde nulla molestiae odit omnis eligendi quaerat itaque quo? Consequatur voluptatum voluptas, sequi veniam quia doloribus aliquam quas eius dolores officiis in perferendis placeat? Dolores hic beatae quae qui voluptatum nulla error, deserunt magnam, eveniet cupiditate, quisquam temporibus impedit nostrum dolorum! At maiores cum blanditiis temporibus, molestias, eaque itaque, sunt beatae voluptatum omnis optio laborum dicta facilis quia dolore! Qui quam porro fugit blanditiis soluta eos placeat corporis minima repellendus, inventore id commodi, laudantium perferendis nostrum?",
+      "date": "Wed Sep 18 2019 21:38:48 GMT+0100 (WAT)",
+      "tags": "fashion",
+      "id": 10
+    },
+    {
+      "author": "Repeated",
+      "title": "To be Repeated",
+      "image_src": "Unknown-3.jpeg",
+      "blog_main": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellat, in consequatur iusto, distinctio adipisci ipsum beatae voluptatem dolorum qui facere? Minima explicabo eaque unde nulla molestiae odit omnis eligendi quaerat itaque quo? Consequatur voluptatum voluptas, sequi veniam quia doloribus aliquam quas eius dolores officiis in perferendis placeat? Dolores hic beatae quae qui voluptatum nulla error, deserunt magnam, eveniet cupiditate, quisquam temporibus impedit nostrum dolorum! At maiores cum blanditiis temporibus, molestias, eaque itaque, sunt beatae voluptatum omnis optio laborum dicta facilis quia dolore! Qui quam porro fugit blanditiis soluta eos placeat corporis minima repellendus, inventore id commodi, laudantium perferendis nostrum?",
+      "date": "Wed Sep 18 2019 21:38:52 GMT+0100 (WAT)",
+      "tags": "fashion",
+      "id": 11
+    },
+    {
+      "author": "Repeated",
+      "title": "To be Repeated",
+      "image_src": "Unknown-2.jpeg",
+      "blog_main": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellat, in consequatur iusto, distinctio adipisci ipsum beatae voluptatem dolorum qui facere? Minima explicabo eaque unde nulla molestiae odit omnis eligendi quaerat itaque quo? Consequatur voluptatum voluptas, sequi veniam quia doloribus aliquam quas eius dolores officiis in perferendis placeat? Dolores hic beatae quae qui voluptatum nulla error, deserunt magnam, eveniet cupiditate, quisquam temporibus impedit nostrum dolorum! At maiores cum blanditiis temporibus, molestias, eaque itaque, sunt beatae voluptatum omnis optio laborum dicta facilis quia dolore! Qui quam porro fugit blanditiis soluta eos placeat corporis minima repellendus, inventore id commodi, laudantium perferendis nostrum?",
+      "date": "Wed Sep 18 2019 21:38:54 GMT+0100 (WAT)",
+      "tags": "fashion",
+      "id": 12
+    },
+    {
+      "author": "Repeated",
+      "title": "To be Repeated",
+      "image_src": "Unknown-3.jpeg",
+      "blog_main": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellat, in consequatur iusto, distinctio adipisci ipsum beatae voluptatem dolorum qui facere? Minima explicabo eaque unde nulla molestiae odit omnis eligendi quaerat itaque quo? Consequatur voluptatum voluptas, sequi veniam quia doloribus aliquam quas eius dolores officiis in perferendis placeat? Dolores hic beatae quae qui voluptatum nulla error, deserunt magnam, eveniet cupiditate, quisquam temporibus impedit nostrum dolorum! At maiores cum blanditiis temporibus, molestias, eaque itaque, sunt beatae voluptatum omnis optio laborum dicta facilis quia dolore! Qui quam porro fugit blanditiis soluta eos placeat corporis minima repellendus, inventore id commodi, laudantium perferendis nostrum?",
+      "date": "Wed Sep 18 2019 21:38:56 GMT+0100 (WAT)",
+      "tags": "fashion",
+      "id": 13
+    },
+    {
+      "author": "Repeated",
+      "title": "To be Repeated",
+      "image_src": "Unknown-1.jpeg",
+      "blog_main": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellat, in consequatur iusto, distinctio adipisci ipsum beatae voluptatem dolorum qui facere? Minima explicabo eaque unde nulla molestiae odit omnis eligendi quaerat itaque quo? Consequatur voluptatum voluptas, sequi veniam quia doloribus aliquam quas eius dolores officiis in perferendis placeat? Dolores hic beatae quae qui voluptatum nulla error, deserunt magnam, eveniet cupiditate, quisquam temporibus impedit nostrum dolorum! At maiores cum blanditiis temporibus, molestias, eaque itaque, sunt beatae voluptatum omnis optio laborum dicta facilis quia dolore! Qui quam porro fugit blanditiis soluta eos placeat corporis minima repellendus, inventore id commodi, laudantium perferendis nostrum?",
+      "date": "Wed Sep 18 2019 21:39:00 GMT+0100 (WAT)",
+      "tags": "lifestyle",
+      "id": 14
+    },
+    {
+      "author": "Repeated",
+      "title": "To be Repeated",
+      "image_src": "Unknown-4.jpeg",
+      "blog_main": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellat, in consequatur iusto, distinctio adipisci ipsum beatae voluptatem dolorum qui facere? Minima explicabo eaque unde nulla molestiae odit omnis eligendi quaerat itaque quo? Consequatur voluptatum voluptas, sequi veniam quia doloribus aliquam quas eius dolores officiis in perferendis placeat? Dolores hic beatae quae qui voluptatum nulla error, deserunt magnam, eveniet cupiditate, quisquam temporibus impedit nostrum dolorum! At maiores cum blanditiis temporibus, molestias, eaque itaque, sunt beatae voluptatum omnis optio laborum dicta facilis quia dolore! Qui quam porro fugit blanditiis soluta eos placeat corporis minima repellendus, inventore id commodi, laudantium perferendis nostrum?",
+      "date": "Wed Sep 18 2019 21:39:06 GMT+0100 (WAT)",
+      "tags": "adventure",
+      "id": 15
+    },
+    {
+      "author": "Repeated",
+      "title": "To be Repeated",
+      "image_src": "Unknown.jpeg",
+      "blog_main": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellat, in consequatur iusto, distinctio adipisci ipsum beatae voluptatem dolorum qui facere? Minima explicabo eaque unde nulla molestiae odit omnis eligendi quaerat itaque quo? Consequatur voluptatum voluptas, sequi veniam quia doloribus aliquam quas eius dolores officiis in perferendis placeat? Dolores hic beatae quae qui voluptatum nulla error, deserunt magnam, eveniet cupiditate, quisquam temporibus impedit nostrum dolorum! At maiores cum blanditiis temporibus, molestias, eaque itaque, sunt beatae voluptatum omnis optio laborum dicta facilis quia dolore! Qui quam porro fugit blanditiis soluta eos placeat corporis minima repellendus, inventore id commodi, laudantium perferendis nostrum?",
+      "date": "Wed Sep 18 2019 21:39:10 GMT+0100 (WAT)",
+      "tags": "sex",
+      "id": 16
     }
   ],
   "comments": [
@@ -172,6 +271,14 @@
       "date": "Wed Sep 18 2019 21:21:11 GMT+0800 (Singapore Standard Time)",
       "cBody": "giugiugiugiu",
       "id": 16
+    },
+    {
+      "cName": "Comment for pagination",
+      "cEmail": "Seyi Pagination",
+      "blog_id": "1",
+      "date": "Thu Sep 19 2019 00:38:41 GMT+0100 (West Africa Standard Time)",
+      "cBody": "Pagination Code",
+      "id": 17
     }
   ],
   "tags": [

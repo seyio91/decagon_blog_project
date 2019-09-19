@@ -23,9 +23,9 @@ $.get(url, function(data){
          
             <div class="row">
                 <div class="group1 col-sm-6 col-md-6">
-                        <i class="fas fa-folder-open"></i>  <a href="#" id="uvuavf">  ${data.tags}</a>
+                        <i class="fas fa-folder-open"></i>  <a href="tag_post.html?tag=${data.tags}" id="uvuavf">  ${data.tags}</a>
                 </div>
-                <div class="group2 col-sm-6 col-md-6">
+                <div class="group2 col-sm-6 col-md-6"><span>By ${data.author}</span>
                         <i class="fas fa-user-edit"></i><span id="commentCount"></span> Comments
                         <i class="far fa-clock"></i>   ${data.date.slice(0,24)}
                 </div>
@@ -33,7 +33,7 @@ $.get(url, function(data){
          
             <hr>
          
-            <img src="./images/ThumperDC.jpg" class="img-fluid">
+            <img src="./images/${data.image_src}" class="img-fluid">
          
             <br />
          
@@ -114,10 +114,10 @@ function populator(cUrl){
         $('#commentCount').append(`  ${data.length}`)
         for (let i = 0; i < data.length; i++){
             $("#comment_list").append(`
-                <li class="comment">
+                <li class="comment" id="commentPost">
                 <div class="clearfix">
                     <h4 class="pull-left">${data[i].cName}</h4>
-                    <p class="pull-right"> ${data[i].date}</p>
+                    <p class="pull-right"> ${data[i].date.slice(0,24)}</p>
                 </div>
                 <p>
                     <em>${data[i].cBody}</em>
@@ -126,7 +126,11 @@ function populator(cUrl){
 
 
                 `)
-        }    
+        }
+        $("#commentPagination").customPaginate({
+
+            itemsToPaginate : "li#commentPost"
+        })    
     });
 }
 

@@ -19,7 +19,7 @@
   <body>
         <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a href="#" class="navbar-brand">Seyi's Blog</a>
+                        <a href="blog_posts.html" class="navbar-brand">Seyi's Blog</a>
                         <button class="navbar-toggler">
                             <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarMenu"></span>
                         </button>
@@ -94,9 +94,13 @@
                             </div>
                     
                         </form>
+                        
                         <ul id="comment_list" class="comments">
                             <!--Comment Code Runs Here-->
                         </ul>
+                        <div class="comment" id="commentPagination">
+                            <!-- commment Pagination -->
+                        </div>
                     </div>
                     <!--End Comment-->
                 </div>
@@ -118,6 +122,9 @@
                                 <ul class="list-group list-group-flush" id="featured_titles">
                                     <!--Dynamic Titles-->
                                 </ul>
+                            </div>
+                            <div class="card-footer text-muted" id="titlePagination">
+                                <!-- title Pagination -->
                             </div>
                             
                     </div>
@@ -162,14 +169,16 @@
             <button type="submit" id="comment_submit">Submit</button>
         </form>
     </div> -->
-
+    <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam repellat, in consequatur iusto, distinctio adipisci ipsum beatae voluptatem dolorum qui facere? Minima explicabo eaque unde nulla molestiae odit omnis eligendi quaerat itaque quo? Consequatur voluptatum voluptas, sequi veniam quia doloribus aliquam quas eius dolores officiis in perferendis placeat? Dolores hic beatae quae qui voluptatum nulla error, deserunt magnam, eveniet cupiditate, quisquam temporibus impedit nostrum dolorum! At maiores cum blanditiis temporibus, molestias, eaque itaque, sunt beatae voluptatum omnis optio laborum dicta facilis quia dolore! Qui quam porro fugit blanditiis soluta eos placeat corporis minima repellendus, inventore id commodi, laudantium perferendis nostrum? -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
      <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
+    <script src="./paginate.js"></script>
     <script type="text/javascript" src="views.js"></script>
     <script type="text/javascript" src="./all.js"></script>
+    
   </body>
 </html>
