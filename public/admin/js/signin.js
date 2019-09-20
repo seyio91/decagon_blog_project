@@ -33,7 +33,7 @@ $(document).ready(function(){
 
                         //set session
                         localStorage.setItem("localSession", JSON.stringify(sessionData));
-                        $(location).attr("href", "file:///Users/woleoluwalana/Desktop/blog_post/js_tutorials_mac/bootstrap_blog/index.html")
+                        $(location).attr("href", "index.html")
                         
                     }
                 }
