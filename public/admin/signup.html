@@ -34,7 +34,7 @@
 			<div class="wrap-login100">
 				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
 					<span class="login100-form-title-1">
-						Sign In
+						Sign Up
 					</span>
 				</div>
 
@@ -72,15 +72,27 @@
 					</div>
 
 					<div class="flex-sb-m w-full p-b-30">
-						<div class="contact100-form-checkbox">
-							files for error
+						<div class="txt1" id="signupError" style="color: red">
+							<!-- error text -->
+							password incorrect, user already exists
+						</div>
+						<div>
+							<a href="index.html" class="txt1">SignIn</a>
 						</div>
 					</div>
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							SignUp
-						</button>
+					<div class="flex-sb-m w-full p-b-30">
+						<div class="container-login100-form-btn">
+								
+							<button class="login100-form-btn" id="signUpUser">
+									Sign-Up
+							</button>
+						</div>
+						<div>or</div>
+						<div style="width: 200px!important">
+							<a href="../index.html">Continue as Visitor</a>
+						</div>
+								
 					</div>
 				</form>
 			</div>
@@ -104,7 +116,7 @@
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
-	<script src="./js/singup.js"></script>
+	<script src="./js/signup.js"></script>
 	<script src="../js/jquery.md5.js"></script>
 
 </body>

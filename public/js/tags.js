@@ -5,6 +5,7 @@ $(document).ready(function(){
     }
     
     var tag_id = $.urlParam('tag');
+    $('#tagDiplayTitle').append(`${tag_id}`)
 
     tUrl = "http://localhost:3000/blog_posts?tags=" + tag_id;
 

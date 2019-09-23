@@ -27,26 +27,19 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand" href="index.html">Seyi's Blog</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" id="customLogin">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="post.html">Sample Post</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+          <li class="nav-item" id="customLogin">
           </li>
         </ul>
       </div>
@@ -54,12 +47,12 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" id="imageView">
+  <header class="masthead imageView" id="imageView">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto" >
-          <div class="post-heading text-center" id="viewTitle">
+          <div class="post-heading text-center headerUpArticle" id="viewTitle">
             <h1>
               <!-- title -->
             </h1>
@@ -76,49 +69,79 @@
   </header>
 
   <!-- Post Content -->
-  <article>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div id="viewDisplay">
-            <!-- Blog Content Code -->
-          </div>
-          <div id="viewCategory">
-            <!-- Category -->
-          </div>
-          <div>
-            <!-- Comment List -->
-            <h4 class="mb-5">Comments</h4>
-            <ul id="comment_list" class="comments comment-list list-group list-group-flush">
-                <!-- Comments Details -->
-            </ul>
-          </div>
-          <div class="comment-form-wrap pt-5">
-            <!-- comment Form -->
-            <h3 class="mb-5">Leave a comment</h3>
-            <form action="#" class="p-5 bg-light">
-                <div class="form-group">
-                  <label for="name">Name *</label>
-                  <input type="text" class="form-control" id="comment_name">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-9">
+        <article>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-10 mx-auto">
+                <div id="viewDisplay">
+                  <!-- Blog Content Code -->
                 </div>
-                <div class="form-group">
-                  <label for="email">Email *</label>
-                  <input type="email" class="form-control" id="comment_email">
+                <!-- <div id="viewCategory">
+                  Category
+                </div> -->
+                <div>
+                  <!-- Comment List -->
+                  <hr>
+                  <br>
+                  <h3 class="mb-5" style="text-align: center;">Comments</h3>
+                  <ul id="comment_list" class="comments comment-list list-group list-group-flush">
+                      <!-- Comments Details -->
+                  </ul>
                 </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea name="" id="comment_body" cols="30" rows="10" class="form-control"></textarea>
-                </div>
-                <div class="form-group">
-                  <input type="submit" value="Post Comment" class="btn btn-primary" id="comment_submit">
-                </div>
+                <div class="comment-form-wrap pt-5">
+                  <!-- comment Form -->
+                  <hr>
+                  <h3 class="mb-5">Leave a comment</h3>
+                  <form action="#" class="p-5 bg-light">
+                      <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" class="form-control" id="comment_name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" id="comment_email">
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Comment</label>
+                        <textarea name="" id="comment_body" cols="30" rows="3" class="form-control"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <input type="submit" value="Post Comment" class="btn btn-primary" id="comment_submit">
+                      </div>
 
-              </form>
+                    </form>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </article>
       </div>
+      <div class="col-md-3">
+          <div class="card mb-3" id="fullsideBar">
+              <div class="card-body">
+                  <h5 class="card-title">Stay Updated</h5>
+                  <p class="card-text">Don't want to miss updates? Please click the below button!</p>
+                  <a href="#" class="btn btn-primary">Subscribe to my feed</a>
+              </div>
+          </div>
+          <!--Catgories-->
+          <div class="card mb-3">
+                  <div class="card-header">
+                          Category
+                  </div>
+                  <div class="card-body">
+                      <ul class="list-inline" id="category_view">
+                          <!--Dynamic Catgories-->
+                      </ul>
+                  </div>
+            </div>
+      </div>
+      <!-- Row Div -->
     </div>
-  </article>
+  </div>
 
   <hr>
 
@@ -165,10 +188,11 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
-  <script type="text/javascript" src="./js/index.js"></script>
+  <!-- <script type="text/javascript" src="./js/index.js"></script> -->
   <script src="./js/paginate.js"></script>
   <script type="text/javascript" src="./js/views.js"></script>
   <script type="text/javascript" src="./js/all.js"></script>
+  <script src="./admin/js/customizer.js"></script>
 
 </body>
 

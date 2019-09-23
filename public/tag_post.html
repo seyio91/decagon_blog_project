@@ -35,18 +35,11 @@
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" id="customLogin">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="post.html">Sample Post</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+          <li class="nav-item" id="customLogin">
           </li>
         </ul>
       </div>
@@ -54,12 +47,12 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+  <header class="masthead imageView" style="background-image: url('img/home-bg.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
+          <div class="site-heading headerUp">
             <h1>Seyi</h1>
             <span class="subheading">This wasn't Easy at all</span>
           </div>
@@ -72,17 +65,18 @@
   <div class="container-fluid">
     <div class="row">
       <!-- new col under -->
-      <div class="col-md-9">
-        <!-- <div id="page_Title">
-          temp page Number show
-        </div> -->
+    <div class="col-md-9">
+      <div class="col-lg-8 col-md-10 mx-auto text-center">
+        <h2>Category: <span id="tagDiplayTitle"></span></h2>
+        <hr>
+      </div>
       <div class="col-lg-8 col-md-10 mx-auto" id="tag_search">
         <!-- blog post run here -->
         <div class="clearfix pagination" id="tagPagination">
           <!-- navigation Runs here -->
         </div>
       </div>
-      <div id="displaypNumber">
+      <div class="col-lg-8 col-md-10 mx-auto" id="displaypNumber">
           <!-- temp page Number show -->
         </div>
     </div>
@@ -177,6 +171,7 @@
   <script src="./js/paginate.js"></script>
   <script src="./js/all.js"></script>
   <script src="./js/tags.js"></script>
+  <script src="./admin/js/customizer.js"></script>
 
 </body>
 

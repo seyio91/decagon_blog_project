@@ -33,7 +33,7 @@ $(document).ready(function(){
 
                         //set session
                         localStorage.setItem("localSession", JSON.stringify(sessionData));
-                        $(location).attr("href", "index.html")
+                        $(location).attr("href", "../index.html")
                         
                     }
                 }

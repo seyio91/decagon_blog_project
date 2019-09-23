@@ -15,7 +15,7 @@ if (!!localStorage.getItem("localSession")){
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="blog_Add.html">Admin Page</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" ><span id="signOut">SignOut</span> here</a>
+          <button type="button" onclick="signOut()" class="dropdown-item btn-link" id="signOut" >SignOut here</button>
         </div> 
         </li>`)
     })
@@ -25,8 +25,7 @@ if (!!localStorage.getItem("localSession")){
     $('ul#customLogin').append(`<li class="nav-item"><a class="nav-link" href="/admin/index.html">Login</a></li>`)
 }
 
-$('#signOut').click(function(event){
-    event.preventDefault();
+function signOut(){
     localStorage.removeItem("localSession");
-    location.reload();
-})
+    $(location).attr("href", "index.html");
+}

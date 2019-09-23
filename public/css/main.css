@@ -31,3 +31,15 @@
 .pt-5 {
     padding-top: 3rem!important;
 }
+
+.imageView {
+    height: 400px;
+}
+
+.headerUp {
+    padding: 120px 0!important;
+}
+
+.headerUpArticle {
+    padding: 70px 0!important;
+}

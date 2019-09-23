@@ -15,7 +15,7 @@ $.get(url, function(data){
     console.log(data);
     $(document).prop('title', data.title);
         //Add New NBody
-        $('#imageView').attr('style', `background-image: url('img/home-bg.jpg')`)
+        $('#imageView').attr('style', `background-image: url('img/${data.image_src}')`)
         $('div#viewTitle h1').append(`<p>${data.title}</p>`)
         $('div#viewTitle h2').append(`<p>${data.blog_main.slice(0,50)}</p>`)
         $('#dateAuthor').append(`Posted by
@@ -26,7 +26,10 @@ $.get(url, function(data){
         <br>
         <br>
         <br>
-        <p><i class="fas fa-folder-open"></i>  Category: <a href="tag_post.html?tag=${data.tags}" id="uvuavf">  ${data.tags}</a></p>
+        <div>
+            <p><i class="fas fa-folder-open"></i>  Category: <a href="tag_post.html?tag=${data.tags}" id="uvuavf">  ${data.tags}</a></p>
+            <a class="btn btn-primary" href="index.html" style="text-align: right;">Back to Home Page</a>
+        </div>
         `)
         // $('div#viewCategory').append(`<p>${data.title}</p>`)
         //end Add
@@ -84,9 +87,6 @@ $("#comment_submit").click(function(event){
             cReset();
         }
     });
-       //cReset();
-       //window.location.replace(rUrl);
-       
     }
 })
 
@@ -102,8 +102,10 @@ function populator(cUrl){
             $("#comment_list").append(`
             <li class="comment  list-group-item" id="commentPost">
             <div class="comment-body">
-            <h3>${data[i].cName}</h3>
-            <div class="meta">${data[i].date.slice(0,24)}</div>
+            <div class="row">
+                <div class="col-7"><h5>${data[i].cName}</h5> </div>
+                <div class="col-5 text-right font-italic font-weight-light" style="font-size:15px;">${data[i].date.slice(0,24)}</div>
+            </div>
             <p>${data[i].cBody}</p>
           </div>
           </li>
@@ -165,5 +167,16 @@ populator(cUrl);
       $("#mi-modal").modal('hide');
     });
 
-console.log(String(new Date()).slice(0,24))
-console.log(new Date())
+    $(document).ready(function(){
+            //Calling Categories
+    $.get("http://localhost:3000/tags", function(data){
+        console.log(data);
+        for (let i = 0; i < data.length; i++){
+            $("#category_view").append(`
+                <li class="list-group-item"><a href="tag_post.html?tag=${data[i]}">${data[i]}</a></li>
+                `)
+        }    
+        });
+    })
+
+
