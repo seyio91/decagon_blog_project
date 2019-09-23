@@ -38,43 +38,42 @@
 					</span>
 				</div>
 
-				<form class="login100-form validate-form">
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+				<form class="login100-form validate-form" name="signup" id="signupform">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="First-Name is required">
 						<span class="label-input100">First Name: </span>
-						<input class="input100" type="text" name="username" placeholder="Enter username">
+						<input class="input100" type="text" name="signupfName" placeholder="Enter FirstName" id="signupfName">
 						<span class="focus-input100"></span>
 					</div>
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Last Name is required">
 							<span class="label-input100">Last Name</span>
-							<input class="input100" type="text" name="username" placeholder="Enter username">
+							<input class="input100" type="text" name="signuplName" placeholder="Enter Last Name" id="signuplName">
 							<span class="focus-input100"></span>
 					</div>
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Email is required">
 						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="username" placeholder="Enter username">
+						<input class="input100" name="signupEmail" placeholder="Enter Email" id="signupEmail" type="email">
 						<span class="focus-input100"></span>
 					</div>
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Enter username">
+						<label for="signupusername" class="label-input100">Username</label>
+						<input class="input100" type="text" name="signupuName" placeholder="Enter username" id="signupuName">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="Enter password">
+						<input class="input100" type="password" name="passCode" placeholder="Enter password" id="passCode" minlength="6">
 						<span class="focus-input100"></span>
 					</div>
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
 						<span class="label-input100">Confirm Password</span>
-						<input class="input100" type="password" name="pass" placeholder="Enter password">
+						<input class="input100" type="password" name="passConfirm" placeholder="Enter password" id="passConfirm" minlength="6">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="txt1" id="signupError" style="color: red">
 							<!-- error text -->
-							password incorrect, user already exists
 						</div>
 						<div>
 							<a href="index.html" class="txt1">SignIn</a>
@@ -84,7 +83,7 @@
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="container-login100-form-btn">
 								
-							<button class="login100-form-btn" id="signUpUser">
+							<button class="login100-form-btn" id="signUpUser" type="submit">
 									Sign-Up
 							</button>
 						</div>
@@ -115,8 +114,9 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
-	<script src="./js/signup.js"></script>
+	<!-- <script src="./js/jquery.validate.js"></script> -->
+	<!-- <script src="./js/signup.js"></script> -->
+	
 	<script src="../js/jquery.md5.js"></script>
 
 </body>

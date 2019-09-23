@@ -1,3 +1,5 @@
+//check to see if you are already logged in
+
 $(document).ready(function(){
     $('#signinSubmit').click(function(event){
         event.preventDefault();

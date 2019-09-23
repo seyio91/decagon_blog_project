@@ -23,6 +23,14 @@
       "username": "seyio92",
       "password": "5d41402abc4b2a76b9719d911017c592",
       "email": "ann@codingthesmartway.com"
+    },
+    {
+      "first_name": "Test",
+      "last_name": "User 1",
+      "username": "tester01",
+      "password": "fb962b825eb196520888ac7f3220b32f",
+      "email": "seyi@yahoo.com",
+      "id": 4
     }
   ],
   "blog_posts": [

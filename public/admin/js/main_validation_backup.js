@@ -19,58 +19,17 @@
     [ Validate ]*/
     var input = $('.validate-input .input100');
 
-    $('.validate-form').on('submit',function(event){
-        event.preventDefault();
+    $('.validate-form').on('submit',function(){
         var check = true;
 
         for(var i=0; i<input.length; i++) {
             if(validate(input[i]) == false){
                 showValidate(input[i]);
                 check=false;
-                $('#signupError').text("Enter Required Fields")
             }
         }
-        //Test Check Here
-        if (check == true){
-            //do your get
-            let userNVal = $("#signupuName").val();
-            console.log(userNVal)
-            const userUrl = "http://localhost:3000/users?username=" + userNVal;
-            $.get(userUrl, function(data){
-                if (data.length > 0){
-                    showValidate($('#signupuName'))
-                    $('#signupError').text("Username is already taken")
-                }
-            })
-            //end get
-            
-            //check password test
-            if ($('#passCode').val() != $('#passConfirm').val()){
-                showValidate($('#passCode'))
-                showValidate($('#passConfirm'))
-                $('#signupError').text("Passwords do not match")
-            }
 
-            let userName = $("#signupuName").val();
-            //getting form values
-            let profile = {
-                first_name: $("#signupfName").val(),
-                last_name: $("#signuplName").val(),
-                username: userName,
-                password: $.MD5($('#passCode').val()),
-                email: $("#signupEmail").val()
-            }
-
-            console.log(profile)
-            //Post after tests pass
-            $.post("http://localhost:3000/users", profile, function(){
-                alert(`user ${userName} created. Please Login`)
-                $(location).attr("href", "index.html")
-            })
-        }
-        
         return check;
-        
     });
 
 
